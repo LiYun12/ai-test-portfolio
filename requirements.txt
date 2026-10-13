@@ -1,0 +1,11 @@
+# 被测服务
+fastapi>=0.115
+uvicorn[standard]>=0.30
+
+# 测试
+pytest>=8.2
+httpx>=0.27
+requests>=2.32
+PyYAML>=6.0
+allure-pytest>=2.13
+Faker>=25.0
