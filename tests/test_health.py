@@ -23,3 +23,10 @@ def test_index_info(client: TestClient):
         f"service 字段缺失或错误：{body}"
     )
     assert body.get("version") == "0.1.0", f"version 字段缺失或错误：{body}"
+
+def test_404_unknown_route(client: TestClient):
+    """GET /route 测试路由不存在时返回404"""
+    resp = client.get("/route")
+    assert resp.status_code == 404, "路由不存在时未返回404"
+    body = resp.json()
+    assert body.get("status") is None, "路由不存在时未返回None"
