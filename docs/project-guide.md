@@ -51,10 +51,10 @@ ai-test-portfolio/
 更新时间：2026-10-20
 
 - M0 已完成：仓库、FastAPI 骨架、3 条基础用例、GitHub SSH 和首次推送；
-- 当前测试：`15 passed`；
+- 当前测试：`3 passed`；
 - 当前分支：`main`，已跟踪 `origin/main`；
-- 最新提交以 `git log -1 --oneline` 为准；
-- M1 正在进行：`/summarize` mock 接口和边界用例已完成，下一步是 `/classify`；
+- 当前提交：`bb8d486 test:完善未知路由404响应断言`；
+- M1 正在进行：下一步是 `/summarize` 的 mock 接口和边界用例；
 - 已知但不阻塞的问题：FastAPI/Starlette 的 TestClient 产生 `httpx` 弃用警告。
 
 ## 5. 接下来要做什么
