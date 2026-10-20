@@ -4,6 +4,9 @@
 
 路线：自动化测试 → AI 测试 → 测试专家。阶段计划见 `docs/roadmap.md`。
 
+项目目标、当前进度、目录结构和下一步任务统一记录在
+[`docs/project-guide.md`](docs/project-guide.md)。
+
 ## 目录结构
 
 ```text
