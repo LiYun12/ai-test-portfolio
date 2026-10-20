@@ -28,6 +28,21 @@ pytest                              # 跑全部用例
 uvicorn app.main:app --reload       # 起服务，浏览器打开 http://127.0.0.1:8000/docs
 ```
 
+## API
+
+- `GET /health`：健康检查；
+- `GET /`：服务基本信息；
+- `POST /summarize`：mock 摘要接口，文本限制 1~2000 字符且至少包含一个文字或数字，摘要句数限制 1~5。
+
+摘要请求示例：
+
+```json
+{
+  "text": "第一句。第二句！第三句？",
+  "max_sentences": 2
+}
+```
+
 ## 工作约定
 
 - 断言必须带失败信息：`assert actual == expected, "说明"`，禁止裸 assert；
